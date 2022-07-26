@@ -1,0 +1,131 @@
+:root {
+	--cyan: hsl(180, 66%, 49%);
+	--dark-violet: hsl(257, 27%, 26%);
+	--red: hsl(0, 87%, 67%);
+	--gray: hsl(0, 0%, 75%);
+	--frayish-violet: hsl(257, 7%, 63%);
+	--very-dark-blue: hsl(255, 11%, 22%);
+	--very-dark-violet: hsl(260, 8%, 14%);
+	--font-size: 18px;
+	--font-regular: 500;
+	--font-bold: 700;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: var(--font-size);
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 2rem;
+}
+
+li {
+	margin: 10px 0;
+	font-weight: var(--font-regular);
+	color: var(--gray);
+}
+
+header,
+.hero,
+.statistic {
+	padding: 0 10px;
+	padding-top: 1rem;
+}
+/* HEADER */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__button {
+	border: 0;
+	font-size: 2.5rem;
+}
+
+/* HERO */
+
+.hero__image {
+	max-width: 100%;
+}
+.hero__title {
+	font-weight: var(--font-bold);
+}
+.hero__description {
+	color: var(--gray);
+}
+.hero__button {
+	background-color: var(--cyan);
+	border: 0;
+	padding: 15px 30px;
+	color: white;
+	border-radius: 50px;
+}
+
+/* STATISTICS SECTION */
+
+.statistics__title {
+	font-weight: var(--font-bold);
+}
+
+.statistics__description,
+.statistic__description {
+	color: var(--gray);
+	font-weight: var(--font-regular);
+}
+
+.statistics__description {
+	margin-bottom: 3rem;
+}
+
+/* STATISTIC SECTION */
+.statistic {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.icon-container {
+	background-color: var(--dark-violet);
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.statistic__title {
+	margin-bottom: 0;
+}
+
+/* BOOST SECTION */
+.boost {
+	background-color: var(--dark-violet);
+	background-image: url('../images/bg-boost-mobile.svg');
+	padding: 4rem 0;
+	color: white;
+}
+
+/* FOOTER */
+footer {
+	padding-top: 2.5rem;
+	padding-bottom: 1rem;
+	background-color: var(--very-dark-violet);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__title {
+	margin: 0;
+}
+
+.footer__social {
+	display: flex;
+	gap: 1rem;
+}
